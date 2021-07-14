@@ -58,7 +58,7 @@ body{
 
 .header-section{
     background-color: rgb(45,37,160);
-    height: 677px;
+    /* height: 677px; */
     padding-bottom: 86px;
     margin-bottom: 70px;
    
@@ -67,6 +67,8 @@ body{
 
 .top-banner{
     display: flex;
+    justify-content: center;
+   
     
 } 
 
@@ -191,11 +193,83 @@ footer img{
     margin-top: 20px;
 }
 
+.tournament-status{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 224px 156px 158px 182px;
+}
 
 
 
+/* ------------Media quarys start style------------- */
+
+/*----- Mobile devices------ */
+
+@media only screen and (max-width: 688px) {
+   
+   .top-banner{
+    flex-direction: column;
+    width: 360px;
+    height: 695px;
+    margin-left: 0px;
+    margin-top: 0px;
+   }
+
+   .first-half{
+    
+    width: 278px;
+    height: 138px;
+    margin-left: 16px;
+    margin-top: 112px;
+    
+}
+
+.second-half{
+    width: 329px;
+    height: 259.17px;
+    margin-left: 15px;
+    margin-top: 374px;
+    margin-bottom: 61.83px;
+    
+   
+}
+
+.second-half:hover{
+    
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+
+.first-button{ 
+    margin-left: 19px;   
+}
+
+   .first-three-players, .second-players, .third-players, .fourth-players{
+    grid-template-columns: repeat(1  ,1fr) ;
+    margin: 0px 15px 24px 15px;
+    
+   }
+
+  
+
+   /* footer-image{
+    width: 75px;
+    height: 63px;
+    margin-left: 1px;
+    margin-top: 43px;
+       
+   }
+
+   .footer-icons{
+    width: 170px;
+    height: 32px;
+    margin-left: 95px;
+    margin-right: 95px;
+    
+   } */
 
 
+}
 
 
  
