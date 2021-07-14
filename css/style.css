@@ -14,25 +14,44 @@ body{
 /* Navbar section style */
 
 .topnav {
-    background-image: linear-gradient(blue , aqua);
+    background-image:rgb(45,37,160);
     overflow: hidden;
+    padding-top: 42px;
+    
   }
 
   .topnav a {
     float: right;
     color: #f2f2f2;
     text-align: center;
-    padding: 20px 16px;
-    margin-right: 120px;
+    padding: 0px 0px 0px 0px;
+    margin-right: 36px;
+    margin-left: 90px;
     text-decoration: none;
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    
   }
 
   
 .topnav a:hover {
     background-color:aqua;
     color: blue;
+  }
+
+  .nav-button{
+    align-items: center;
+    background-color: #E02C6D;
+    color: white; 
+    font-weight: 700px; 
+    width: 123px;
+    height: 29.33px;
+    padding: 10px 10px 0px 0px;
+    margin-left: 450px;
+    
+   
   }
   
 /* Header section style */
@@ -81,20 +100,26 @@ body{
     padding: 10px 24px;    
 }
 
+/* Second part styles */
 
 .second-half{
     width: 556.01px;
     height: 438px;
     margin-left: 102px;
     margin-top: 153px;
+    
    
+}
+
+.second-half:hover{
+    
+            transform: rotate(360deg);
+            transition: transform 2s ease-in-out;
 }
 
 .second-half img{
     width: 100%;
 }
-
-/* Second part styles */
 
 .first-three-players, .second-players, .third-players, .fourth-players {
     margin-top:40px;
