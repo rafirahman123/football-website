@@ -115,8 +115,8 @@ body{
 
 .second-half:hover{
     
-            transform: rotate(360deg);
-            transition: transform 2s ease-in-out;
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out;
 }
 
 .second-half img{
@@ -166,27 +166,35 @@ body{
 /* Footer section start */
 
 footer{
-    width: 483.87px;
-    height: 213px;
-    margin-left: 475px;
-    margin-right: 481.13px;
-    margin-top: 154px;
-    margin-bottom: 63px;
+    padding: 60px 0;
 }
-
-footer img{
-    width: 483.87px;
-    height: 110px;
-   
+.footer-image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
-
+.footer-image img{
+    width: 350px;
+    display: inline;
+    align-items: center;
+    margin: 20px 0;
+}
 .footer-icons{
-    text-align: center;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
     color:grey;
-    margin: 20px 156.94px 20px 156.94px;
     font-size: 24px;
     border-radius: 50%;
     
+}
+.footer-icons i{
+    background-color: rgba(11, 13, 23, 0.1);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px 0;
 }
 .copyrights{
     text-align: center;
@@ -199,14 +207,64 @@ footer img{
     margin: 224px 156px 158px 182px;
 }
 
-
-
+.favourite-team{
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+.favourite-team-title{
+    font: 48px;
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+.team-card{
+    padding: 10px;
+    flex: 20%;
+}
+.team-card img{
+    width: 120px;
+}
+/* .news-letter{
+    background-color: #f3f1ff;
+} */
+.news-letter .form-container{
+    text-align: center;
+    margin: 20px 0;
+}
+.form-container input{
+    padding: 20px;
+    border: none;
+    background-color: #f3f1ff;
+    border-bottom: 2px solid #E02C6D;
+    font-size: 16px;
+    margin: 10px;
+}
+.form-submit-button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'poppins';
+    border: none;
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 12px 30px;
+}
 /* ------------Media quarys start style------------- */
 
 /*----- Mobile devices------ */
 
 @media only screen and (max-width: 688px) {
-   
+   .heading-title{
+       font-size: 36px;
+       line-height: 50px;
+       font-weight: bold;
+   }
    .top-banner{
     flex-direction: column;
     width: 360px;
@@ -228,12 +286,13 @@ footer img{
     width: 329px;
     height: 259.17px;
     margin-left: 15px;
-    margin-top: 374px;
     margin-bottom: 61.83px;
     
    
 }
-
+.second-half img{
+    width: 344px;
+}
 .second-half:hover{
     
     transform: rotate(360deg);
@@ -241,7 +300,7 @@ footer img{
 }
 
 .first-button{ 
-    margin-left: 19px;   
+    /* margin-left: 19px;    */
 }
 
    .first-three-players, .second-players, .third-players, .fourth-players{
@@ -252,22 +311,22 @@ footer img{
 
   
 
-   /* footer-image{
-    width: 75px;
-    height: 63px;
-    margin-left: 1px;
-    margin-top: 43px;
-       
+   .footer-image img{
+        width: 270px;
    }
 
    .footer-icons{
-    width: 170px;
-    height: 32px;
-    margin-left: 95px;
-    margin-right: 95px;
     
-   } */
-
+    
+   }
+   .team-card{
+    padding: 10px;
+    
+}
+.favourite-team{
+    width: 100%;
+    flex-direction: column;
+}
 
 }
 
